@@ -1,0 +1,7 @@
+INFO Server started
+INFO User login
+ERROR Database connection failed
+WARNING Disk space low
+INFO Request completed
+ERROR User not found
+INFO Server stopped
