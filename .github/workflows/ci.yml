@@ -43,3 +43,6 @@ jobs:
       
       - name: Build docker image
         run: docker build -t subodhdhamala/nodejs-cicd-pipeline:latest .
+
+      - name: Push docker image
+        run: docker push subodhdhamala/nodejs-cicd-pipeline:latest .
