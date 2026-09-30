@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-#run it only when node project changes
+#run it only when node project changes..
     paths: 
       - "nodejs-docker-cicd-pipeline/**"
       - ".github/workflows/ci.yml"
