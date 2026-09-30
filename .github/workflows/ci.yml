@@ -7,7 +7,7 @@ on:
 
 #run it only when node project changes
     paths: 
-      - "nodejs-dcoker-cicd-pipeline/**""
+      - "nodejs-docker-cicd-pipeline/**"
       - ".github/workflows/ci.yml"
   
   pull_request:
