@@ -4,10 +4,19 @@ on:
   push:
     branches:
       - main
+
+#run it only when node project changes
+    paths: 
+      - "nodejs-dcoker-cicd-pipeline/**""
+      - ".github/workflows/ci.yml"
   
   pull_request:
     branches:
     - main
+
+    paths: 
+      - "nodejs-docker-cicd-pipeline/**"
+      - ".github/workflows/ci.yml"
 
 jobs:
   test:
@@ -45,4 +54,4 @@ jobs:
         run: docker build -t subodhdhamala/nodejs-cicd-pipeline:latest .
 
       - name: Push docker image
-        run: docker push subodhdhamala/nodejs-cicd-pipeline:latest .
+        run: docker push subodhdhamala/nodejs-cicd-pipeline:latest
